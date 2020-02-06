@@ -1,3 +1,16 @@
-const { name, age, ...props } = { name: 'Poly', age: 3, games: 47, isOnline: false };
+const user = {
+    name: 'Mango',
+    age: 20,
+    hobby: 'html',
+    premium: true,
+  };
+  
+  user.mood = 'happy';
+  user.hobby = 'skydiving';
+  user.premium = 'false';
 
-console.log(props)
+for (const key of Object.keys(user)) {
+    console.log(`${key}: ${user[key]}`)
+}
+
+  
