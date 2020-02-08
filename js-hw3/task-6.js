@@ -7,7 +7,10 @@ const products = [
   
   const calculateTotalPrice = function(allProdcuts, productName) {
     let totalPrice = 0;
-
+    
+    for (let i = 0; i < allProdcuts.length; i++)
+        if (allProdcuts[i].name === productName) 
+        return allProdcuts[i].price * allProdcuts[i].quantity;
     
   };
 

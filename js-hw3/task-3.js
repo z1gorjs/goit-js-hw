@@ -1,7 +1,16 @@
-const findBestEmployee = function(employees){
-    const employeeKey = Object.keys(employees);
-    let 
-}
+const findBestEmployee = function(employees) {
+  const arr = Object.keys(employees);
+  let bestEmploye = arr[0];
+  let bestEmployeTask = employees[arr[0]];
+  
+  for (let i = 1; i < arr.length; i++){
+      if (employees[arr[i]] > bestEmployeTask){
+          bestEmployeTask = employees[arr[i]];
+          bestEmploye = arr[i]
+      }
+  }
+  return bestEmploye;
+};
 
 console.log(
     findBestEmployee({
