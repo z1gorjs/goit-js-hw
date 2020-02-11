@@ -1,3 +1,4 @@
+'use strict'
 const findLongestWord = function(string) {
     const stringMessage = string.split (' ');
   let maxWord = stringMessage[0];
