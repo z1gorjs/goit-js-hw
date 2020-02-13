@@ -1,3 +1,5 @@
+'use strict'
+
 const findBestEmployee = function(employees) {
   const arr = Object.keys(employees);
   let bestEmploye = arr[0];

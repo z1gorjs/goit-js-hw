@@ -1,3 +1,5 @@
+'use strict'
+
 const countTotalSalary = function(employees) {
     let totalSalary = 0;
     for (const salary of Object.values(employees)) 
